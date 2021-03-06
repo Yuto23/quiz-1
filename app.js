@@ -1,17 +1,17 @@
   
 const quiz = [
     {
-      question: 'ゲーム史上、最も売れたゲーム機はどれ？',
-      answers: [ 'スーパーファミコン', 'PlayStation 2', 'ニンテンドーDS', 'Xbox 360'],
-      correct: 'ニンテンドーDS'
+      question: '英語の試験でないものはどれ？',
+      answers: [ 'TOEFL', 'IELTS', 'ENGINE', 'TOEIC'],
+      correct: 'ENGINE'
     }, {
-      question: '糸井重里が企画に関わった、任天堂の看板ゲームといえば？',
-      answers: [ 'MOTHER2', 'スーパーマリオブラザーズ3', 'スーパードンキーコング', '星のカービィ'],
-      correct: 'MOTHER2'
+      question: 'バーコードで読み取れないものはどれ？',
+      answers: [ 'CODE39', 'HITAI', 'QRコード'],
+      correct: 'HITAI'
     }, {
-      question: 'ファイナルファンタジーⅣの主人公の名前は？',
-      answers: [ 'フリオニール', 'クラウド', 'ティーダ', 'セシル'],
-      correct: 'セシル'
+      question: 'イタリアにないものはどれ？',
+      answers: [ 'Mt Fuji', 'roma', 'venezia', 'milano'],
+      correct: 'Mt Fuji'
     }
   ];
   

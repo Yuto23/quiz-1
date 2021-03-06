@@ -6,7 +6,7 @@ const quiz = [
       correct: 'ENGINE'
     }, {
       question: 'バーコードで読み取れないものはどれ？',
-      answers: [ 'CODE39', 'HITAI', 'QRコード'],
+      answers: [ 'CODE39', 'HITAI', 'QRコード', 'CODE128'],
       correct: 'HITAI'
     }, {
       question: 'イタリアにないものはどれ？',

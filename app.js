@@ -1,17 +1,17 @@
   
 const quiz = [
     {
-      question: '英語の試験でないものはどれ？',
-      answers: [ 'TOEFL', 'IELTS', 'ENGINE', 'TOEIC'],
-      correct: 'ENGINE'
+      question: '英語で「雑学」はなんという？',
+      answers: [ 'Timber', 'Trivia', 'Chance', 'Waltz'],
+      correct: 'Trivia'
     }, {
-      question: 'バーコードで読み取れないものはどれ？',
-      answers: [ 'CODE39', 'HITAI', 'QR', 'CODE128'],
-      correct: 'HITAI'
+      question: '英語で通じない単語はどれ？',
+      answers: [ 'アルバイト', 'カフェ', 'Wi-Fi', 'ドリル'],
+      correct: 'アルバイト'
     }, {
-      question: 'イタリアにないものはどれ？',
-      answers: [ 'Mt Fuji', 'roma', 'venezia', 'milano'],
-      correct: 'Mt Fuji'
+      question: 'イギリス英語は「ゴミ」はどれ？',
+      answers: [ 'fade', 'chicken', 'rubbish', 'pancake'],
+      correct: 'rubbish'
     }
   ];
   
@@ -48,16 +48,16 @@ const quiz = [
   
   const judge = (elm) => {
     if(elm.textContent === quiz[quizCount].correct){
-      $window.alert('正解!');
+      $window.alert('すごいっ！正解です!');
       score++;
     } else {
-      $window.alert('不正解!');
+      $window.alert('残念！不正解のようです!');
     }
     goToNext();
   };
   
   const showEnd = () => {
-    $question.textContent = '終了！あなたのスコアは' + score + '/' + quizLen + 'です';
+    $question.textContent = '終了です！あなたのスコアは' + score + '/' + quizLen + 'でした！';
     
     const $items = $doc.getElementById('js-items');
     $items.style.visibility = 'hidden';
@@ -67,7 +67,7 @@ const quiz = [
   
   let answersIndex = 0;
   let answersLen = quiz[quizCount].answers.length;
-  
+
   while(answersIndex < answersLen){
     $buttons[answersIndex].addEventListener('click', (e) => {
       judge(e.target);
